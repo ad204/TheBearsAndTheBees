@@ -1,0 +1,43 @@
+#Buni {
+  position: absolute;
+  left: 100px;
+  /top: 300px;
+  /width: 100px;
+  height: 100px;
+}
+
+#board {
+  position: absolute;
+  height: 400px;
+  width: 580px;
+  background-image: url("https://i.pinimg.com/564x/fc/17/fb/fc17fb63ad7518bf8549ebc82b611954.jpg");
+  background-repeat: no-repeat;
+  background-position: absolute;
+  align-content: stretch;
+}
+
+#title {
+  background-image: url("https://i.pinimg.com/564x/30/cf/ac/30cfac6dad142327817c213831139491.jpg");
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-size: 100%, 80%;
+}
+
+#scores {
+  background-image: url("https://64.media.tumblr.com/6a40ef69f01a63f61617502c1ac3f3df/tumblr_p58uugid3I1ve087jo6_540.gifv");
+  background-repeat: no-repeat;
+  align-content: center;
+  align-self: center;
+}
+
+.location {
+  color: green;
+}
+
+#hits {
+  color: red;
+}
+
+#duration {
+  color: blue;
+}

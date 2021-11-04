@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Static Template</title>
-  </head>
-  <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
-  </body>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JavaScript and DOM API</title>
+    <link rel="stylesheet" type="text/css" href="game.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="game.js"></script>
+    <noscript>
+     Warning - JavaScript is Disabled.
+     For full functionality of this page, it is necessary to enable JavaScript
+    </noscript>
+    <script>
+      var Buni;
+      var Cupcakes;
+      </script>
+
+     <body onload="start();">
+
+        <div id="title">
+            <h1>Buni is Lactose intolerance! </h1>
+            <p>Help Buni avoid the cupcakes <input type="text" id="nbCupcakes" value="1" size="3"> by running and jumping. The objective is to have as little cupcakes hit Buni in the face!</p>
+            <p>You can adjust the cupcakes' speed <input type="text" id="speedCupcakes" value="50" size="3"> px/ms
+                <p>You can adjust Buni's speed <input type="text" id="dBuni" value="50" size="3"> px/ms </p>
+                <br> and the refresh period <input type="text" id="periodTimer" value="30" size="3"> ms </p>
+            <h2>Press left, right, up, down keys to move Buni</h2>
+
+        </div>
+        <div id="scores">
+            <table>
+                <tr>
+                    <td>
+                        <p>Cupcakes: [<span id="hits">0</span>]</p>
+                    </td>
+                    <td>
+                        <p>Best duration: [<span id="duration">?</span>]</p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="board">
+            <img src="https://64.media.tumblr.com/tumblr_lmux8aTx7c1qkvalqo1_100.gifv" id="Buni" alt="Buni">
+            <img src="https://64.media.tumblr.com/c138e2cae71741ee051c2b598894ac08/tumblr_peblsbT5hs1rppicco1_75sq.gifv" id="Cupcakes" alt="Cupcakes">
+        </div>
+
+    </body>
+
 </html>
